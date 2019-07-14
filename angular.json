@@ -119,6 +119,47 @@
           }
         }
       }
-    }},
+    },
+    "cc-color-picker": {
+      "projectType": "library",
+      "root": "projects/cc-color-picker",
+      "sourceRoot": "projects/cc-color-picker/src",
+      "prefix": "cc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/cc-color-picker/tsconfig.lib.json",
+            "project": "projects/cc-color-picker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/cc-color-picker/ng-package.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/cc-color-picker/src/test.ts",
+            "tsConfig": "projects/cc-color-picker/tsconfig.spec.json",
+            "karmaConfig": "projects/cc-color-picker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/cc-color-picker/tsconfig.lib.json",
+              "projects/cc-color-picker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "cc-color-picker-demo"
 }

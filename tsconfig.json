@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "cc-color-picker": [
+        "dist/cc-color-picker"
+      ],
+      "cc-color-picker/*": [
+        "dist/cc-color-picker/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,7 +1,5 @@
 {
-  "rulesDirectory": [
-    "node_modules/codelyzer"
-  ],
+  "extends": "../../tslint.json",
   "rules": {
     "arrow-return-shorthand": true,
     "callable-types": true,
@@ -119,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "cc",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "cc",
       "kebab-case"
     ],
     "no-output-on-prefix": true,
