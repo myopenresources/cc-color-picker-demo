@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  selectColor = '#00ff00';
+  selectColor = '#00ff00'; 
 }
